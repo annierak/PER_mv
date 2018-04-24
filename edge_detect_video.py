@@ -65,7 +65,7 @@ while success:
     max_contour, max_area = get_max_area_contour(contour_list)
     contour_list = order_by_area(contour_list)
     contour_image = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
-    cv2.drawContours(contour_image,contour_list[1:3],-1,(0,0,255),2)
+    cv2.drawContours(contour_image,contour_list[0],-1,(0,0,255),2)
     # cv2.drawContours(contour_image,contour_list[1:3],-1,(0,0,255),2)
     # display = contour_image
     # plt.draw()
